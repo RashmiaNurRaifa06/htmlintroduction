@@ -3,267 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Lab</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Images/joystick.png" type="image/x-icon">
+    <title>Shopping Buddy- Fresh fruits for your family!</title>
+
+    <!--TailwindCSS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+<link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://i.ibb.co.com/dJ7BtGTr/favicon.png">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: "EB Garamond", serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <div>
-                <div class="nav-profile-head">
-                <img class="nav-profile2" src="Images/profile icon.png" alt="">
-                <h1>Game Lab</h1>
-                </div>
-            </div>
-            
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            
-            <ul class="nav-item" id="nav-item">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#advantages">Advantages</a></li>
-                <li><a href="#disadvantages">Disadvantages</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#about me">About me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+<body class="bg-gray-50 text-gray-800">
+<header class="sticky top-0 z-50 bg-white shadow-lg">
+    <div class="mx-auto flex justify between items-center py-3.5 px-3 xl:px-4">
+        <a href="#" class="text-3xl font-extrabold text-green-600 flex items-center gap-2">
+            <i class="fa-solid fa-basket-shopping text-red-600"></i> Shopping <span>Buddy</span>
+        </a>
+
+        <!--Desktop Navigation-->
+        <nav class="hidden lg:flex gap-4 xl:gap-8 text-lg font-medium">
+            <a href="#home" class="hover: text-green-600 transition">Home</a>
+            <a href="#deal" class="hover: text-green-600 transition">Deal</a>
+            <a href="#products" class="hover: text-green-600 transition">Products</a>
+            <a href="#team" class="hover: text-green-600 transition">Team</a>
+            <a href="#about" class="hover: text-green-600 transition">About</a>
+            <a href="#contact" class="hover: text-green-600 transition">Contact</a>
         </nav>
-         <!--banner-->
-        <div class="banner-container">
-            <div>
-                <img class="banner-img" src="Images/home img.webp" alt="home photo">
-            </div>
-            <div class="banner-head">
-                <h3>Welcome to</h3>
-                <h1>Game Lab</h1>
-                <p>made by Rashmia Nur Raifa</p>
-                <div class="banner-btn">
-                    <button class="btn-share">Share Project</button>
-                    <button class="btn-download">Download Project</button>
-                </div>
-            </div>
+
+        <!--Desktop Search-->
+        <div class="hidden lg:flex items-center bg-gray-100 rounded-lg px-3 py-1 border-2 border-gray-400">
+            <input type="text" placeholder="Search fruits..." class="bg-transparent py-2 outline-none w-40 text-sm"/>
+            <i class="fa-solid fa-magnifying-glass text-green-600 ml-2"></i>
         </div>
-    </header>
-    <main>
-        <!--about section-->
-        <section class="about-section", id="about">
-            <h2 class="section-title">About gaming</h2>
-            <div class="about-container">
-                <img src="Images/aboutimg.jpg" alt="About gaming" class="about-img">
-                <div class="about-text">
-                    <p>
-                       <strong>Gaming</strong> means playing video games on a device like a <strong>computer, console (like a PlayStation, Xbox, or Nintendo Switch), phone, or tablet</strong>. Games can be fun, challenging, creative, or competitive — and there are many different types for different kinds of players.
-                    </p>
-                    <p>
-                        Gaming allows people to have fun, relax, make friends online, and it helps them to challenge themselves.
-                    </p>
-                    <p> 
-                         Gaming isn't just about playing on a computer or pc, because there are thousands of games that are suitable for playing on mobile or tablet as well. In fact, almost all the games you can play on a computer or pc is playable on small devices as well!
-                    </p>
-                    <p>
-                        There are millions of games that users can download and play. Such as:- <strong>Roblox, Minecraft, Subway Surfers, Among Us, Tetris, Bubble Shooter, Fashion Games, Makeup Games, Educational Games,</strong> and so much more!
-                    </p>
-                </div>
 
-            </div>
-        </section>
-        <!--advantages-section-->
-        <section class="advantages-section" id="advantages">
-            <h2 class="advantages-title">Advantages of Gaming</h2>
-            <div class="advantages-container">
-                <div class="advantages-card">
-                    <img class="icon1" src="Images/icon1.png" alt="">
-                    <h3>Improves Problem-Solving Skills</h3>
-                    <p>Many games require thinking, planning, and making decisions, which helps your brain get better at solving problems.</p>
-                </div>
-                <div class="advantages-card">
-                    <img class="icon2" src="Images/icon2.png" alt="">
-                    <h3>Boosts Creativity</h3>
-                    <p>Games like Minecraft, Roblox, or building games let you design, create, and use your imagination.</p>
-                </div>
-                <div class="advantages-card">
-                    <img class="icon3" src="Images/icon3.png" alt="">
-                    <h3>Develops Hand-Eye Coordination</h3>
-                    <p>Controlling a game while watching the screen helps improve your hands and eyes working together.</p>
-                </div>
-                <div class="advantages-card">
-                    <img class="icon4" src="Images/icon4.png" alt="">
-                    <h3>Teaches Teamwork</h3>
-                    <p>Multiplayer games often require working with others, which helps you learn how to cooperate and communicate.</p>
-                </div>
-                <div class="advantages-card">
-                    <img class="icon5" src="Images/icon5.png" alt="">
-                    <h3>Improves Focus and Concentration</h3>
-                    <p>Playing games that require attention can help you stay focused for longer periods of time.</p>
-                </div>
-                <div class="advantages-card">
-                    <img class="icon6" src="Images/icon6.png" alt="">
-                    <h3>Relieves Stress and Boredom</h3>
-                    <p>Gaming can be a fun way to relax, escape a bad mood, or enjoy some free time.</p>
-                </div>
-                <div class="advantages-card">
-                    <img class="icon7" src="Images/icon7.png" alt="">
-                    <h3>Builds Quick Thinking and Reflexes</h3>
-                    <p>Fast-paced games train your brain to react faster and make quicker choices.</p>
-                </div>
-                <div class="advantages-card">
-                    <img class="icon8" src="Images/icon8.png" alt="">
-                    <h3>Encourages Learning and Curiosity</h3>
-                    <p>Some games teach math, science, reading, or history in a fun and interactive way.</p>
-                </div>
-            </div>
-        </section>
-              <!--disadvantages-section-->
-        <section class="disadvantages-section" id="disadvantages">
-            <h2 class="disadvantages-title">Disadvantages of Gaming</h2>
-            <div class="disadvantages-container">
-                <div class="disadvantages-card">
-                    <img class="icon1d" src="Images/icon1d.png" alt="">
-                    <h3>Too Much Screen Time</h3>
-                    <p>Spending too many hours gaming can hurt your eyes and make you feel tired or dizzy.</p>
-                </div>
-                <div class="disadvantages-card">
-                    <img class="icon2d" src="Images/icon2d.png" alt="">
-                    <h3>Less Physical Activity</h3>
-                    <p>If you sit and play for too long, you might not get enough exercise, which is important for your health.</p>
-                </div>
-                <div class="disadvantages-card">
-                    <img class="icon3d" src="Images/icon3d.png" alt="">
-                    <h3>Can Affect Schoolwork</h3>
-                    <p>Playing too much can take time away from homework or studying, which might lower your grades.</p>
-                </div>
-                <div class="disadvantages-card">
-                    <img class="icon4d" src="Images/icon4d.png" alt="">
-                    <h3>Sleep Problems</h3>
-                    <p>Gaming late at night can make it harder to fall asleep or get enough rest.</p>
-                </div>
-                <div class="disadvantages-card">
-                    <img class="icon5d" src="Images/icon5d.png" alt="">
-                    <h3>Addiction or Overplaying</h3>
-                    <p>Some people get so hooked on gaming that they have trouble stopping or taking breaks.</p>
-                </div>
-                <div class="disadvantages-card">
-                    <img class="icon6d" src="Images/icon6d.png" alt="">
-                    <h3>Online Safety Risks</h3>
-                    <p>Multiplayer games with chats can expose you to strangers or unsafe conversations if you're not careful.</p></h3>  
-                </div>
-                <div class="disadvantages-card">
-                    <img class="icon7d" src="Images/icon7d.png" alt="">
-                    <h3>Frustration or Anger</h3>
-                    <p>Losing in games or facing hard levels can sometimes lead to stress, anger, or bad moods.</p>
-                </div>
-                <div class="disadvantages-card">
-                    <img class="icon8d" src="Images/icon8d.png" alt="">
-                    <h3>Less Time With Family or Friends in Real Life</h3>
-                    <p>Gaming too much might mean missing out on time with family, friends, or outdoor fun.</p>
-                </div>
-            </div>
-        </section>
-        <!--games section-->
-        <section class="games-section" id="games">
-            <h2 class="section-title">Online Games</h2>
-            <div class="games-container">
-                <div class="games-card">
-                    <img src="Images/game1.jpg" alt="Game 1">
-                    <h3>Subway Surfers</h3>
-                    <p>An online game where the character runs through a train station after commiting a crime. The main goal of the character and the game is to collect coins and to run from the mad police and his dog.</p>
-                    <a href="https://poki.com/en/g/subway-surfers" class="btn-games">Play Game</a>
-                </div>
+        <!--Mobile Hamburger-->
+        <button id="menu-btn" class="lg:hidden text-2xl text-gray-700">
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+        </button>
+    </div>
 
-                <div class="games-card">
-                    <img src="Images/game2.jpg" alt="Game 2">
-                    <h3>Happy Glass</h3>
-                    <p>An online game where you have to use your IQ to make sure the water falls inside the glass. The main goal of this game is to test your IQ.</p>
-                    <a href="https://poki.com/en/g/happy-glass" class="btn-games">Play Game</a>
-                </div>
-                
-                <div class="games-card">
-                    <img src="Images/game3.jpg" alt="Game 3">
-                    <h3>ArithmeticA</h3>
-                    <p>An online game where you have to answer math questions within a limited time. The main goal of this game is to test your math skills.</p>
-                    <a href="https://poki.com/en/g/arithmetica" class="btn-games">Play Game</a>
-                </div>
-
-                <div class="games-card">
-                    <img src="Images/game4.jpg" alt="Game 4">
-                    <h3>Brain Test: Tricky Puzzles</h3>
-                    <p>An online game where you have to use your IQ to solve tricky puzzles. The main goal of this game is to test your brain.</p>
-                    <a href="https://poki.com/en/g/brain-test-tricky-puzzles" class="btn-games">Play Game</a>
-                </div>
-
-                <div class="games-card">
-                    <img src="Images/game5.jpg" alt="Game 5">
-                    <h3>Ultimate Sudoku</h3>
-                    <p>An online game where you have to use your logic and place numbers to win the game. The main goal of this game is to help test your numbers.</p>
-                    <a href="https://poki.com/en/g/ultimate-sudoku" class="btn-games">Play Game</a>
-                </div>
-
-                <div class="games-card">
-                    <img src="Images/game6.jpg" alt="Game 6">
-                    <h3>Who is?</h3>
-                    <p>An online game where you are the detective and you have to solve tricky cases. The main goal of this game is to test your IQ skills.</p>
-                    <a href="https://poki.com/en/g/who-is" class="btn-games">Play Game</a>
-                </div>
+    <!--Mobile/Tablet Menu-->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200 pb-3 md:pb-4">
+        <nav class="flex flex-col px-4 py-3font-medium text-base md:text-lg">
+            <a href="#home" class="py-2 px-2 rounded hover:bg-green-50">Home</a>
+            <a href="#deal" class="py-2 px-2 rounded hover:bg-green-50">Deal</a>
+            <a href="#products" class="py-2 px-2 rounded hover:bg-green-50">Products</a>
+            <a href="#team" class="py-2 px-2 rounded hover:bg-green-50">Team</a>
+            <a href="#about" class="py-2 px-2 rounded hover:bg-green-50">About</a>
+            <a href="#contact" class="py-2 px-2 rounded hover:bg-green-50">Contact</a>
+            <div class="flex items-center bg-gray-100 rounded-lg px-3 py-2 mt-2 border-2 border-gray-400">
+            <input type="text" placeholder="Search fruits..." class="bg-transparent outline-none w-full text-sm">
+            <i class="fa-solid fa-magnifying-glass text-green-600 ml-2"></i>
             </div>
-        </section>
-        <!--about section-->
-        <section class="aboutme-section", id="about me">
-            <h2 class="section-title">About me</h2>
-            <div class="aboutme-container">
-                <img src="Images/aboutmeimg.jpg" alt="About me" class="about-img">
-                <div class="aboutme-text">
-                    <p>
-                       I am <strong>Rashmia Nur Raifa</strong>, a passionate <b>coding student </b>with great learning abilities.
-                       I enjoy making clean, modern, and user-friendly codes.
-                       My main goal is to learn more, explore and help solve real-life problems with coding.
-                    </p>
-                    <p>
-                        Beyond coding, I enjoy helping others understand code, exploring, and creating fun projects!
-                    </p>
-                    <p> 
-                        So far, I've learned a lot such as- <b>Scratch, Python, Pygame, CSS and HTML. <b> I hope to learn more like-</b>Javascript, and other advanced codes.</b>
-                    </p>
-                    <p>
-                        Outside of coding, I enjoy watching documentaries, reading books, travelling, watching educational movies, and gardening.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!--contact section-->
-        <section class="contact-section" id="contact">
-            <h2 class="section-title">Contact me</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <p><i class="fa-solid fa-envelope"></i>rashmianurraifa@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+880 193 588 0920</p>
-                    <p><i class="fa-solid fa-location-dot"></i>Dhaka, Bangladesh</p>
-                    <div class="contact-social">
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name..." required>
-                    <input type="email" placeholder="Your Email..." required>
-                    <textarea rows="5" placeholder="Your Message/Feedback/Complaint..." required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
+        </nav>
+    </div>
+</header>
 
-    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+
+</main>
+
+<footer>
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+<script src="https://kit.fontawesome.com/2c2c3a511e.js" crossorigin="anonymous"></script>    
 </body>
 </html>
