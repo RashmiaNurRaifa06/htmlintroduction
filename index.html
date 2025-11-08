@@ -30,8 +30,9 @@
 </head>
 
 <body class="bg-gray-50 text-gray-800">
-<header class="sticky top-0 z-50 bg-white shadow-lg">
-    <div class="mx-auto flex justify between items-center py-3.5 px-3 xl:px-4">
+<header>
+<div class="sticky top-0 z-50 bg-white shadow-lg">
+    <div class="mx-auto flex justify-between items-center py-3.5 px-3 xl:px-4">
         <a href="#" class="text-3xl font-extrabold text-green-600 flex items-center gap-2">
             <i class="fa-solid fa-basket-shopping text-red-600"></i> Shopping <span>Buddy</span>
         </a>
@@ -73,31 +74,173 @@
             </div>
         </nav>
     </div>
+</div>
+<!--Hero-section-->
+<div id="home" class="relative h-[80vh] overflow-hidden">
+    <!--slides-->
+    <div id="hero-slides" class="relative h-full">
+        <!--banner-1-->
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-700 opacity-100"
+        style="background-image: url(https://i.ibb.co.com/rC8666N/banner-1.png);">
+        <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>   
+        </div>
+        <!--banner-2-->
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-700 opacity-0"
+        style="background-image: url(https://i.ibb.co.com/fVtvrWsJ/banner-2.png);">
+        <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>   
+        </div>
+        <!--banner-3-->
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-700 opacity-0"
+        style="background-image: url(https://i.ibb.co.com/3mpy6MkQ/banner-3.png);">
+        <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>   
+        </div>
+        <!--banner-4-->
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-700 opacity-0"
+        style="background-image: url(https://i.ibb.co.com/FbP9vYCf/banner-4.png);">
+        <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>   
+        </div>
+
+        <!--text-content-->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-5 z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 ">Freshness You Can Taste 🍎</h1>
+            <p class="text-lg mb-6 max-w-xl mx-auto ">Delivering farm-fresh fruits to your doorstep - pure, organic, and delicious.</p>
+            <a href="#products"
+            class="inline-blocks bg-green-600 hover:bg-green-700 px-6 py-3 rounded-full text-white font-semibold transition">Shop Now</a>
+        </div>
+
+        <!--buttons-->
+        <button id="prev-slide" 
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#24242461] text-white p-3 rounded-full hover:bg-opacity-80 transition cursor-pointer z-20">
+        <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="next-slide"
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#24242461] text-white p-3 rounded-full hover:bg-opacity-80 transition cursor-pointer z-20">
+        <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
 </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 <main>
+    <!--deal of the day-->
+    <section id="deal" class="max-w-7xl mx-auto text-center py-16 px-6">
+        <h2 class="text-4xl font-bold text-green-700 mb-3">Deal of the day</h2>
+        <p class="text-gray-600 mb-8">Hurry up! Offer ends soon!</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition">
+                <img src="https://i.ibb.co.com/vxJTrGrR/top-4.png" alt="Strawberry" class="h-48 w-full object-contain mb-4">
+                <h3 class="text-xl font-semibold">Strawberry</h3>
+                <p class="text-green-600 font-medium mb-3">$5.50 / kg</p>
+                <button class="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 hover:cursor-pointer">Add to Cart</button>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition">
+                <img src="https://i.ibb.co.com/7c9Zjtx/card-2.png" alt="Orange" class="h-48 w-full object-contain mb-4">
+                <h3 class="text-xl font-semibold">Orange</h3>
+                <p class="text-green-600 font-medium mb-3">$6.00 / kg</p>
+                <button class="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 hover:cursor-pointer">Add to Cart</button>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition">
+                <img src="https://i.ibb.co.com/Cp9N93BN/card-3.png" alt="Dragon" class="h-48 w-full object-contain mb-4">
+                <h3 class="text-xl font-semibold">Dragon</h3>
+                <p class="text-green-600 font-medium mb-3">$4.50 / pc</p>
+                <button class="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 hover:cursor-pointer">Add to Cart</button>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition">
+                <img src="https://i.ibb.co.com/0pYtNBh7/card-4.png" alt="Banana" class="h-48 w-full object-contain mb-4">
+                <h3 class="text-xl font-semibold">Banana</h3>
+                <p class="text-green-600 font-medium mb-3">$3.00 / bunch</p>
+                <button class="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 hover:cursor-pointer">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!--featured products-->
+
+    <section id="products" class="max-w-7xl mx-auto pb-16 px-6 text-center">
+        <h2 class="text-4xl font-bold text-green-700 mb-3">Our Featured Fruits</h2>
+        <p class="text-gray-600 mb-10">Handpicked from the best orchards🌿</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition">
+                <img src="https://i.ibb.co.com/RpXb06xh/card-1.png" alt="Apple" class="h-48 w-full object-contain mb-4">
+                <h3 class="text-xl font-semibold">Apple</h3>
+                <p class="text-green-600 font-medium mb-3">$6.00 / kg</p>
+                <button class="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 hover:cursor-pointer">Buy Now</button>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition">
+                <img src="https://i.ibb.co.com/tP4MZyJL/top-2.png" alt="Malta" class="h-48 w-full object-contain mb-4">
+                <h3 class="text-xl font-semibold">Malta</h3>
+                <p class="text-green-600 font-medium mb-3">$6.50 / kg</p>
+                <button class="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 hover:cursor-pointer">Buy Now</button>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition">
+                <img src="https://i.ibb.co.com/wrxD5P4p/top-3.png" alt="Mango" class="h-48 w-full object-contain mb-4">
+                <h3 class="text-xl font-semibold">Mango</h3>
+                <p class="text-green-600 font-medium mb-3">$2.00 / pc</p>
+                <button class="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 hover:cursor-pointer">Buy Now</button>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-5 hover:shadow-xl transition">
+                <img src="https://i.ibb.co.com/d4HqywcQ/top-5.png" alt="Pomegranate" class="h-48 w-full object-contain mb-4">
+                <h3 class="text-xl font-semibold">Pomegranate</h3>
+                <p class="text-green-600 font-medium mb-3">$3.00 / pc</p>
+                <button class="w-full bg-green-600 text-white py-2 rounded-full hover:bg-green-700 hover:cursor-pointer">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!--testimonials-->
+
+    <section class="bg-green-50 py-16 text-center">
+        <h2 class="text-4xl font-bold text-green-700 mb-3">What Our Customers Say</h2>
+        <p class="text-gray-600 mb-10">Trusted by thousands of happy customers🍊</p>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+            <div class="bg-white shadow-lg p-6 rounded-lg">
+                <p class="text-gray-600 italic mb-4">"Absolutely love the freshness! My go-to for healthy fruits every week."</p>
+                <h4 class="font-semibold text-green-700">-Sarah K.</h4>
+            </div>
+
+            <div class="bg-white shadow-lg p-6 rounded-lg">
+                <p class="text-gray-600 italic mb-4">"Fast delivery and top-notch quality. Worth every dollar!"</p>
+                <h4 class="font-semibold text-green-700">-Arif Hasan</h4>
+            </div>
+
+            <div class="bg-white shadow-lg p-6 rounded-lg">
+                <p class="text-gray-600 italic mb-4">"The best organic fruit selection I've found online!"</p>
+                <h4 class="font-semibold text-green-700">-Meena Das</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--about section-->
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-green-700 mb-4">About Fresh Basket</h2>
+                <p class=""></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </main>
-
-<footer>
-
-</footer>
-
-
 
 
 <script src="script.js"></script>
